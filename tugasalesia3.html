@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="id"> 
+ <head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>ST Bhinneka</title> 
+  <script>
+        function showPage(page) {
+            document.getElementById("content").innerHTML = document.getElementById(page).innerHTML;
+        }
+    </script> 
+ </head> 
+ <body onload="showPage('home')"> 
+  <h1>ST Bhinneka</h1> 
+  <h2>UNIVERSITAS SATYA TERRA BHINNEKA</h2> 
+  <h3>Menu Navigasi</h3> 
+  <ul> 
+   <li><a href="#" onclick="showPage('home')">Beranda</a></li> 
+   <li><a href="#" onclick="showPage('about')">Tentang Kami</a></li> 
+   <li><a href="#" onclick="showPage('contact')">Hubungi Kami</a></li> 
+  </ul> 
+  <div id="content"></div> <!-- Halaman Beranda --> 
+  <div id="home" style="display:none;"> 
+   <h2>Formulir Pengguna</h2> 
+   <form> <label>Nama: <input type="text" name="nama"></label>
+    <br> <label>Email: <input type="email" name="email"></label>
+    <br> <label>Password: <input type="password" name="password"></label>
+    <br> <label>Alamat:<br> <textarea name="alamat"></textarea></label>
+    <br> <label>Jenis Kelamin:</label>
+    <br> 
+    <input type="radio" name="gender" value="laki-laki"> Laki-laki 
+    <input type="radio" name="gender" value="perempuan"> Perempuan
+    <br> <label>Hobi:</label>
+    <br> 
+    <input type="checkbox" name="hobi" value="olahraga"> Olahraga 
+    <input type="checkbox" name="hobi" value="musik"> Musik 
+    <input type="checkbox" name="hobi" value="membaca"> Membaca
+    <br> <label>Usia: <input type="number" name="usia"></label>
+    <br> <label>Pilih Gambar: <input type="file" name="gambar"></label>
+    <br> <label>Tanggal Lahir: <input type="date" name="tanggal_lahir"></label>
+    <br> <button type="submit">Submit</button> 
+   </form> 
+  </div> <!-- Halaman Tentang Kami --> 
+  <div id="about" style="display:none;"> 
+   <h1>Visi dan Misi</h1> 
+   <h2>Visi:</h2> 
+   <p>“Menjadi perguruan tinggi yang unggul dalam mengembangkan ilmu pengetahuan, teknologi, dan penelitian yang berbasis prinsip berkelanjutan, berwawasan global, inovatif, dan inklusif untuk meningkatkan pembangunan manusia Indonesia secara holistik pada tahun 2048.”.</p> 
+   <h2>Misi:</h2> 
+   <ul> 
+    <li> 1. Menyelenggarakan pendidikan berbasis teknologi dan penelitian, berprinsip inklusif, berwawasan global, berkelanjutan, dan bermanfaat.
+    .</li> 
+    <li> 2. Menyelenggarakan penelitian yang kolaboratif, interdisipliner, inovatif, dan bermanfaat.</li> 
+    <li> 3. Menyelenggarakan pengabdian kepada masyarakat yang efektif, partisipatif, dan tepat sasaran.</li> 
+    <li> 4. Membangun ekosistem universitas yang berkelanjutan, inklusif, egaliter, suportif, dan demokratis.</li>
+    <li> 5. Mengembangkan kualitas dan kompetensi civitas akademika.</li>
+   </ul> 
+  </div> <!-- Halaman Hubungi Kami --> 
+  <div id="contact" style="display:none;"> 
+   <h1>Hubungi Kami</h1> 
+   <p>Email: office@satyaterrabhinneka.ac.id</p> 
+   <p>Telepon: (061)8457702 </p> 
+   <p>Alamat: Jl. Sunggal Gg. Bakul, Sunggal, Kec. Medan Sunggal, Kota Medan, Sumatera Utara 20128</p> 
+  </div> 
+ </body>
+</html>
